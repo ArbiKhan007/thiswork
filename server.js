@@ -7,6 +7,12 @@ let db;
 
 app.use(express.static("public"));
 
+let port = process.env.PORT;
+
+if (port == null || port == "") {
+  port = 3000;
+}
+
 let connectionString =
   "mongodb+srv://beetrootUser:connection007@cluster0.62vep.mongodb.net/TodoApp?retryWrites=true&w=majority";
 mongodb.connect(
@@ -14,7 +20,7 @@ mongodb.connect(
   { useNewUrlParser: true, useUnifiedTopology: true },
   function (err, client) {
     db = client.db();
-    app.listen(3000);
+    app.listen(port);
   }
 );
 
