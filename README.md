@@ -3,4 +3,4 @@
 thiswork todo app <h1>🗒🗒🗒📋</h1>
 Simple Todo App with Authentication and tasks stored in MongoDB Database.
 
-Build with <h3>♥️</h3> and <h3>☕️</h3> by Shamsuzzoha
+Build with <span>♥️</span> and <span>☕️</span> by Shamsuzzoha
